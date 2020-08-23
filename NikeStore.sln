@@ -5,6 +5,22 @@ VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikeStore", "NikeStore\NikeStore.csproj", "{DDD64719-587A-4752-99F8-3F9781721914}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{2D371A19-AD72-4044-9145-9CEE812C8A01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "datastorage.framework", "datastorage.framework\datastorage.framework.csproj", "{E49A355A-384F-4238-B3AC-B78A3600A4A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "datastorage.core", "datastorage.core\datastorage.core.csproj", "{4C91AC9C-6047-47EB-BCD9-A06A34FD66A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nikeStore.datastorage", "nikeStore.datastorage\nikeStore.datastorage.csproj", "{9A9E81C1-C3B0-447B-BF41-13951E407BA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{1006F891-F6F9-4144-9600-D2CA967D0594}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{15DE0BC3-E018-43D5-B381-8FCF1F43AEDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{3B8820CD-735A-4B4E-A15F-8B30685814E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{2243699F-C0EF-4F48-9F11-ED974261715E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +31,27 @@ Global
 		{DDD64719-587A-4752-99F8-3F9781721914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDD64719-587A-4752-99F8-3F9781721914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDD64719-587A-4752-99F8-3F9781721914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49A355A-384F-4238-B3AC-B78A3600A4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49A355A-384F-4238-B3AC-B78A3600A4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49A355A-384F-4238-B3AC-B78A3600A4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49A355A-384F-4238-B3AC-B78A3600A4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C91AC9C-6047-47EB-BCD9-A06A34FD66A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C91AC9C-6047-47EB-BCD9-A06A34FD66A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C91AC9C-6047-47EB-BCD9-A06A34FD66A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C91AC9C-6047-47EB-BCD9-A06A34FD66A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9E81C1-C3B0-447B-BF41-13951E407BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9E81C1-C3B0-447B-BF41-13951E407BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9E81C1-C3B0-447B-BF41-13951E407BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9E81C1-C3B0-447B-BF41-13951E407BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDD64719-587A-4752-99F8-3F9781721914} = {15DE0BC3-E018-43D5-B381-8FCF1F43AEDA}
+		{E49A355A-384F-4238-B3AC-B78A3600A4A2} = {2D371A19-AD72-4044-9145-9CEE812C8A01}
+		{4C91AC9C-6047-47EB-BCD9-A06A34FD66A5} = {2D371A19-AD72-4044-9145-9CEE812C8A01}
+		{9A9E81C1-C3B0-447B-BF41-13951E407BA9} = {2D371A19-AD72-4044-9145-9CEE812C8A01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FA320A3-F972-4BEA-9253-31642620E6EF}

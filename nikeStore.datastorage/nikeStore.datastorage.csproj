@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>8</LangVersion>
+    <RootNamespace>Nikestore.Datastorage</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\datastorage.core\datastorage.core.csproj" />
+    <ProjectReference Include="..\datastorage.framework\datastorage.framework.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>8</LangVersion>
+    <RootNamespace>Datastorage.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\shared\Verify.cs" Link="shared\Verify.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\datastorage.framework\datastorage.framework.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="shared\" />
+  </ItemGroup>
+</Project>
