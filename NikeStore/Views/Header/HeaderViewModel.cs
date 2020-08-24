@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NikeStore.Views.Header
+namespace NikeStore.Views
 {
 	public partial class HeaderViewModel
 	{

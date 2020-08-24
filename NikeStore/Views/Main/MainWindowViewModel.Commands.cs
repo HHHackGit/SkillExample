@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NikeStore.Views.Main
+namespace NikeStore.Views
 {
 	public partial class MainWindowViewModel
 	{

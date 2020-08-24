@@ -9,7 +9,7 @@ using Support;
 using NikeStore.Navigation;
 using NikeStore.Resolvers;
 
-namespace NikeStore.Views.Main
+namespace NikeStore.Views
 {
 	public partial class MainWindowViewModel
 	{

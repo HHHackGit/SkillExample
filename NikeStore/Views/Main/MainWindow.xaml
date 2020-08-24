@@ -7,7 +7,8 @@
         xmlns:local="clr-namespace:NikeStore"
         mc:Ignorable="d"
         Height="450"
-        Width="800">
+        Width="800"
+        WindowStartupLocation="CenterScreen">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding Commands.LoadDataCommand}" />

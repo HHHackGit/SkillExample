@@ -3,7 +3,7 @@ using System.Windows;
 
 using Autofac;
 
-using NikeStore.SplashScreen;
+using NikeStore.Splash;
 using NikeStore.Critical;
 using NikeStore.Bootstraper;
 using NikeStore.MainShowService;
@@ -66,7 +66,7 @@ namespace NikeStore
 			base.OnStartup(e);
 
 			using var criticalServices = CreateCriticalServices();
-			var splashScreenService = criticalServices.Context.Get<ISplashScreenService>();
+			var splashScreenService = default(ISplashScreenService);
 
 			if(splashScreenService != null)
 			{
@@ -75,7 +75,7 @@ namespace NikeStore
 
 			try
 			{
-				using var container = CreateContainer(criticalServices);
+				using var container   = CreateContainer(criticalServices);
 				using var bootstraper = CreateBootstraper(container);
 
 				await bootstraper.RunAsync();

@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\NikeLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="..\shared\Verify.cs" Link="shared\Verify.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -18,5 +22,11 @@
   <ItemGroup>
     <Folder Include="shared\" />
     <Folder Include="Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nikeStore.datastorage\nikeStore.datastorage.ef.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Resources\NikeLogo.png" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NikeStore.SplashScreen
+namespace NikeStore.Splash
 {
 	public interface ISplashScreenService
 	{
