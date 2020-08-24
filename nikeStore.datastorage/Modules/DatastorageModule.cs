@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Autofac;
+
+using Datastorage.Framework;
+
+using Nikestore.Datastorage.Context;
+using Nikestore.Datastorage.Users;
 
 namespace Nikestore.Datastorage.Modules
 {
@@ -12,6 +13,16 @@ namespace Nikestore.Datastorage.Modules
 	{
 		protected override void Load(ContainerBuilder builder)
 		{
+			builder
+				.RegisterType<DbUserRepository>()
+				.As<IUserRepository>()
+				.SingleInstance();
+
+			builder
+				.RegisterType<NikeStoreContextFactory>()
+				.As<IDbContextFactory>()
+				.SingleInstance();
+
 			base.Load(builder);
 		}
 	}

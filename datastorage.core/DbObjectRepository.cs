@@ -4,14 +4,13 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Datastorage.Core;
 using Datastorage.Framework;
 
 using Support;
 
-namespace datastorage.core
+namespace Datastorage.Core
 {
-	abstract class DbObjectRepository<TObject, TModification> : IAddRepository<TObject>, IFetchRepository<TObject>, IModifyRepository<TObject, TModification>, IRemoveRepository<TObject>, ICountRepository<TObject>
+	public abstract class DbObjectRepository<TObject, TModification> : IRepository<TObject, TModification>
 		where TObject : class, IIdentifiable<long>
 	{
 		#region Data

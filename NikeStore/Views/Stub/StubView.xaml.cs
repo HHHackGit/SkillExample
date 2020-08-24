@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NikeStore
+namespace NikeStore.Views
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for StubView.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class StubView : UserControl
 	{
-		public MainWindow()
+		public StubView()
 		{
 			InitializeComponent();
 		}
